@@ -1,0 +1,2539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionhome">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://i.pinimg.com/736x/3a/79/ee/3a79ee5106ead202550fa9116bde00c8.jpg" class="food-munch-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" id="navItem1" href="#featuredreceipesSection">
+                            Featured receipes
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <a class="nav-link" href="#trendingreceipesSection" id="navItem3">Trending receipes</a>
+                        <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+            <div class="text-center">
+                <h1 class="banner-heading mb-3">Recipes that makes every bite memorable</h1>
+                <p class="banner-caption mb-4">From SPOON CRAFT</p>
+            </div>
+        </div>
+        <div class="explore-menu-section pt-5 pb-5" id="featuredreceipesSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="menu-section-heading">Featured Receipes</h1>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Non-Veg Starters</h1>
+                            <button class="custom-button" onclick="display('sectionnonvegstarters')">View Dishes</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-veg-starters-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Veg Starters</h1>
+                            <button class="custom-button" onclick="display('sectionvegstarters')">View Dishes</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-soup-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Soups</h1>
+                            <button class="custom-button" onclick="display('sectionsoup')">View Dishes</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Fish & Sea food</h1>
+                            <button class="custom-button" onclick="display('sectionfish')">View Dishes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="explore-menu-section pt-5 pb-5" id="trendingreceipesSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12" id="trendingreceipesSection">
+                        <h1 class="menu-section-heading">Trending Receipes</h1>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Main Course</h1>
+                            <button class="custom-button" onclick="display('sectionmaincourse')">View Dishes</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Noodles</h1>
+                            <button class="custom-button" onclick="display('sectionnoodles')">View Dishes</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Salads</h1>
+                            <button class="custom-button" onclick="display('sectionsalad')">View Dishes</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Desserts</h1>
+                            <button class="custom-button" onclick="display('sectiondesserts')">View Dishes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="healthy-food-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <div class="text-center">
+                            <img src="https://blogs.biomedcentral.com/on-medicine/wp-content/uploads/sites/6/2019/09/iStock-1131794876.t5d482e40.m800.xtDADj9SvTVFjzuNeGuNUUGY4tm5d6UGU5tkKM0s3iPk-620x342.jpg" class="healthy-food-section-img" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <h1 class="healthy-food-section-heading">
+                            Fresh, Healthy, Organic, Delicious Fruits
+                        </h1>
+                        <p class="healthy-food-section-description">
+                            Say no to harmful chemicals and go fully organic with our range of
+                            fresh fruits and veggies. Pamper your body and your senses with
+                            the true and unadulterated gifts from mother nature. with the true
+                            and unadulterated gifts from mother nature.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="thanking-customers-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                        <h1 class="thanking-customers-section-heading">
+                            Thank you for being a valuable reviewer to us.
+                        </h1>
+                        <p class="thanking-customers-section-description">
+                            We have a surprise gift for you
+                        </p>
+                        <div class="d-md-none">
+                            <img src="https://media.istockphoto.com/id/1308342088/vector/surprise-gift-box-gift-box-with-red-ribbon-bow-flat-style-element-design-for-giveaway.jpg?s=612x612&w=0&k=20&c=FUOJS2CFbYIqm4R7zfyKUdeS-gMyc3bGlRr1rL7rjQ0=" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 d-none d-md-block">
+                        <img src="https://media.istockphoto.com/id/1308342088/vector/surprise-gift-box-gift-box-with-red-ribbon-bow-flat-style-element-design-for-giveaway.jpg?s=612x612&w=0&k=20&c=FUOJS2CFbYIqm4R7zfyKUdeS-gMyc3bGlRr1rL7rjQ0=" class="thanking-customers-section-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="follow-us-section pt-5 pb-5" id="followUsSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="follow-us-section-heading">Follow Us</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-twitter icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-instagram icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-facebook icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="https://i.pinimg.com/736x/3a/79/ee/3a79ee5106ead202550fa9116bde00c8.jpg" class="food-munch-logo" />
+                        <h1 class="footer-section-mail-id">vijayacitraa@spooncraft.com</h1>
+                        <p class="footer-section-address">
+                            Home
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionsoup">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://lh3.googleusercontent.com/t52vAU6NJrioYnPxwM9OfzZSY_b46pbRtu8ukgLvz9KiyUoK0pGbfnRuLVmdCCwm3py6LNgcFXpEzu50Qt7sSHg5zQ=s800" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Crab Soup</h1>
+                <button class="custom-button" onclick="display('sectioncrabsoup')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://t4.ftcdn.net/jpg/00/82/08/79/360_F_82087975_DG2YNlNAQfZySfsiQASz3PQyJXlpzqp3.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Veg Soup</h1>
+                <button class="custom-button" onclick="display('sectionvegsoup')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://t4.ftcdn.net/jpg/04/72/62/29/360_F_472622913_00rkwfTqr8kuBjq7Y9glR0yTJlLsrrLG.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Chicken Soup</h1>
+                <button class="custom-button" onclick="display('sectionchickensoup')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://t3.ftcdn.net/jpg/04/51/83/44/360_F_451834460_CVuPSmRPMGCCE1G3qMnjhFlPQpJH9l4u.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Mutton Bone Soup</h1>
+                <button class="custom-button" onclick="display('sectionmuttonbonesoup')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://www.indianveggiedelight.com/wp-content/uploads/2020/09/creamy-mushroom-soup-featured.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Creamy Mushroom Soup</h1>
+                <button class="custom-button" onclick="display('sectioncreamymushroomsoup')">View Recipe</button>
+            </div>
+        </div>
+        <button class="btn-success m-3" onclick="display('sectionhome')">Back</button>
+    </div>
+    <div id="sectionnonvegstarters">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlpfM03o88bHcIBzF1gJdDhziXw1V8HanmQg&s" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Chicken 65</h1>
+                <button class="custom-button" onclick="display('sectionchicken65')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://png.pngtree.com/thumb_back/fw800/background/20240109/pngtree-indian-chilli-chicken-dry-served-in-a-plate-over-moody-background-image_15609001.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Chilli Chicken</h1>
+                <button class="custom-button" onclick="display('sectionchillichicken')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://www.licious.in/blog/wp-content/uploads/2022/02/shutterstock_1488206756-min-1.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Prawn Pepper Fry</h1>
+                <button class="custom-button" onclick="display('sectionprawnpepperfry')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo4xCqR8NX3la1nBn-THQ8stAQEhXJl8i1Pg&s" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Mutton Chukka</h1>
+                <button class="custom-button" onclick="display('sectionmuttonchukka')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2024/2/391260232/ZI/HT/LK/190305657/f6aekm7z-500x500.jpeg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Crab Lollipop</h1>
+                <button class="custom-button" onclick="display('sectioncrablollipop')">View Recipe</button>
+            </div>
+        </div>
+        <button class="btn-success m-3" onclick="display('sectionhome')">Back</button>
+    </div>
+    <div id="sectionvegstarters">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://t4.ftcdn.net/jpg/04/75/97/61/360_F_475976157_kJuc6KfyiDoaTfSFLt8CD9OlhPRrChfS.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Panner Chilli</h1>
+                <button class="custom-button" onclick="display('sectionpannerchilli')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://nishkitchen.com/wp-content/uploads/2018/08/Mushroom-Pepper-Fry-1B.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Mushroom Pepper Fry</h1>
+                <button class="custom-button" onclick="display('sectionmushroompepperfry')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://t4.ftcdn.net/jpg/08/06/05/83/360_F_806058380_BrzRKkSN6FmCumlrII93g9V76JgcB8nG.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Panner Tikka</h1>
+                <button class="custom-button" onclick="display('sectionpannertikka')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://www.yummyfoodrecipes.com/resources/picture/org/Crunchy-Golden-Fried-Baby.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Golden Babycorn Fry</h1>
+                <button class="custom-button" onclick="display('sectiongoldenbabycornfry')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://t3.ftcdn.net/jpg/04/47/95/48/360_F_447954890_nYoJ3Lm6OElMe0LogDry2KfHF4tXsfMw.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Gobi Manchurian</h1>
+                <button class="custom-button" onclick="display('sectiongobimanchurian')">View Recipe</button>
+            </div>
+        </div>
+        <button class="btn-success m-3" onclick="display('sectionhome')">Back</button>
+    </div>
+    <div id="sectionfish">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://t4.ftcdn.net/jpg/03/10/87/21/360_F_310872181_q0V3bRGXCSESD5D0lcVcZtTm5AaC4YJk.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Fish Finger</h1>
+                <button class="custom-button" onclick="display('sectionfishfinger')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://images.news18.com/tamil/uploads/2023/06/fish_curry.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Vanjaram Gravy</h1>
+                <button class="custom-button" onclick="display('sectionvanjaramgravy')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBS41ZlbOniJdfJIVHA8ilQbRbx7i24DzibTwO76ziARCu8H5Myk1HwHKHRjtlkbab2tc&usqp=CAU" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Fish Fry</h1>
+                <button class="custom-button" onclick="display('sectionfishfry')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZDYybRkM3JpmvCj7Xf9CBRvwzWwuUdATo46spvGi9kgSdGRjuRyc36_zdd6-g6Tze4lCaRuUplSLKEGWwwXLryrJW_u7anLidQfxbbHEvkJQZHMQPY-I-ZwXBxJiRBypxCzGDrmchfg/s1600/shark+puttu.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Sura Puttu</h1>
+                <button class="custom-button" onclick="display('sectionsuraputtu')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://t4.ftcdn.net/jpg/02/40/55/25/360_F_240552513_5Sd2yMNDCfzLHuF1eDlyqREum153wlns.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Fish Tandoor</h1>
+                <button class="custom-button" onclick="display('sectionfishtandoor')">View Recipe</button>
+            </div>
+        </div>
+        <button class="btn-success m-3" onclick="display('sectionhome')">Back</button>
+    </div>
+    <div id="sectionnoodles">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9bfLdgqTByMsFZQ3DhrWEDPALz9Ojg7XD2g&s" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Veg Noodles</h1>
+                <button class="custom-button" onclick="display('sectionvegnoodles')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8UA8XHBanMyzMYNa8skivmFqFUu008K4NZQ&s" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Panner Noodles</h1>
+                <button class="custom-button" onclick="display('sectionpannernoodles')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh_iNtiOuxMi0H1-PQO2QtE6B2c_uM7vnk1g&s" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Mixed Non-Veg Noodles</h1>
+                <button class="custom-button" onclick="display('sectionmixednonvegnoodles')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://img.freepik.com/free-photo/udon-noodles-with-chicken-peppers-japanese-cuisine_2829-11266.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Chicken Noodles</h1>
+                <button class="custom-button" onclick="display('sectionchickennoodles')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/07/egg-fried-noodles-recipe.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Egg Noodles</h1>
+                <button class="custom-button" onclick="display('sectioneggnoodles')">View Recipe</button>
+            </div>
+        </div>
+        <button class="btn-success m-3" onclick="display('sectionhome')">Back</button>
+    </div>
+    <div id="sectionmaincourse">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://media.istockphoto.com/id/179085494/photo/indian-biryani.jpg?s=612x612&w=0&k=20&c=VJAUfiuavFYB7PXwisvUhLqWFJ20-9m087-czUJp9Fs=" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Veg Biryani</h1>
+                <button class="custom-button" onclick="display('sectionvegbiryani')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://t4.ftcdn.net/jpg/05/17/96/89/360_F_517968988_hFHjQT6Flfksjx8n0KxfvMtP2tqlmGKk.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Mutton Biryani</h1>
+                <button class="custom-button" onclick="display('sectionmuttonbiryani')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://t3.ftcdn.net/jpg/04/41/20/18/360_F_441201852_XQqp1wbAQj9udOC3iT7D0ahKgaf71bns.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Chicken Biryani</h1>
+                <button class="custom-button" onclick="display('sectionchickenbiryani')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://media.istockphoto.com/id/1334383300/sv/foto/fish-biryani-spicy-and-delicious-malabar-biryani-or-hydrabadi-biryani-dum-biriyani.jpg?s=612x612&w=0&k=20&c=qRg54FDw-IS_vDV-SM4LEcK37lvcvQUprLfNw9i8IR0=" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Fish Biryani</h1>
+                <button class="custom-button" onclick="display('sectionfishbiryani')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://www.cookwithkushi.com/wp-content/uploads/2015/09/best_quick_easy_veg_mushroom_biryani.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Mushroom Biryani</h1>
+                <button class="custom-button" onclick="display('sectionmushroombiryani')">View Recipe</button>
+            </div>
+        </div>
+        <button class="btn-success m-3" onclick="display('sectionhome')">Back</button>
+    </div>
+    <div id="sectionsalad">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://static.toiimg.com/thumb/53226657.cms?width=1200&height=900" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Corn Salad</h1>
+                <button class="custom-button" onclick="display('sectioncornsalad')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://img.freepik.com/free-photo/top-view-delicious-fruit-salad-inside-plate-with-fresh-fruits-gray-fruit-tree-exotic-tropical-photo-ripe-diet_140725-109945.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Fruit Salad</h1>
+                <button class="custom-button" onclick="display('sectionfruitsalad')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://img.freepik.com/premium-photo/healthy-fresh-vegetable-salad-with-tomatoes-cucumbers-bell-peppers-plate-white-wooden-background_165656-1378.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Vegetable Salad</h1>
+                <button class="custom-button" onclick="display('sectionvegetablesalad')">View Recipe</button>
+            </div>
+        </div>
+        <button class="btn-success m-3" onclick="display('sectionhome')">Back</button>
+    </div>
+    <div id="sectiondesserts">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJQQoqXGaa1YzZwQQFOdN6K6iBHOqDBOQ4XA&s" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Mousse</h1>
+                <button class="custom-button" onclick="display('sectionmousse')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn1diZlXCIvheW_eUZBXyZUW_6AR_3vZQ4DA&s" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Brownie</h1>
+                <button class="custom-button" onclick="display('sectionbrownie')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_lalaW7j4RFVvItBfnzhZHT9UyhfePbZLig&s" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Ice Cream</h1>
+                <button class="custom-button" onclick="display('sectionicecream')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/63/d1/b0/sizzling-brownie.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Sizzler</h1>
+                <button class="custom-button" onclick="display('sectionsizzler')">View Recipe</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpJeNR-PVqtVPBEwR5KMaXcSYpZWIhS_hmQg&s" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Smoothie</h1>
+                <button class="custom-button" onclick="display('sectionsmoothie')">View Recipe</button>
+            </div>
+        </div>
+        <button class="btn-success m-3" onclick="display('sectionhome')">Back</button>
+    </div>
+    
+
+    <div id="sectionchicken65">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>500g boneless chicken, cut into small pieces</li>
+                <li>2 tbsp ginger-garlic paste</li>
+                <li>1 tsp red chili powder</li>
+                <li>1 tsp turmeric powder</li>
+                <li>1 tsp garam masala</li>
+                <li>1 tbsp cornflour</li>
+                <li>1 tbsp all-purpose flour (maida)</li>
+                <li>1 egg</li>
+                <li>Salt to taste</li>
+                <li>Oil for frying</li>
+                <li>2-3 green chilies, slit</li>
+                <li>Curry leaves for garnish</li>
+                <li>1 tsp lemon juice</li>
+                <li>1 tsp red chili sauce (optional)</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>15-20 minutes</td>
+                    <td>20-25 minutes</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <!-- Use hash link to scroll to the instructions section -->
+            <button class="start-cooking-btn m-5" onclick="display('sectionchicken65instructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionnonvegstarters')">Back</button>
+    </div>
+
+    <div id="sectionchicken65instructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Marinate the chicken: In a bowl, mix the chicken pieces with ginger-garlic paste, red chili powder, turmeric powder, garam masala, salt, cornflour, all-purpose flour, and egg. Let it marinate for at least 30 minutes to an hour.</li>
+            <li>Heat oil: In a deep frying pan, heat enough oil to fry the chicken.</li>
+            <li>Fry the chicken: Once the oil is hot, fry the marinated chicken pieces in batches until golden brown and crispy. Drain on paper towels to remove excess oil.</li>
+            <li>Prepare the tempering: In another pan, heat a little oil. Add slit green chilies and curry leaves, sautéing for a few seconds until aromatic.</li>
+            <li>Toss the chicken: Add the fried chicken to the tempering and toss everything together. Optionally, you can add red chili sauce for an extra kick.</li>
+            <li>Finish and serve: Drizzle lemon juice over the chicken, give it a quick toss, and serve hot as an appetizer or side dish. Garnish with extra curry leaves if desired.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionchicken65')">Back</button>
+    </div>
+    <div id="sectionchillichicken">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>500g boneless chicken, cut into cubes</li>
+                <li>2 tbsp cornflour</li>
+                <li>1 tbsp all-purpose flour (maida)</li>
+                <li>1 egg</li>
+                <li>1 tbsp soy sauce</li>
+                <li>1 tsp red chili powder</li>
+                <li>Salt to taste</li>
+                <li>Oil for frying</li>
+                <li>1 onion, diced</li>
+                <li>1 capsicum, diced</li>
+                <li>2-3 green chilies, slit</li>
+                <li>2 tbsp soy sauce (for sauce)</li>
+                <li>1 tbsp vinegar</li>
+                <li>1 tbsp red chili sauce</li>
+                <li>1 tbsp garlic, minced</li>
+                <li>Spring onions for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>15-20 minutes</td>
+                    <td>20-25 minutes</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <!-- Use hash link to scroll to the instructions section -->
+            <button class="start-cooking-btn m-5" onclick="display('sectionchillichickeninstructions')">Start Cooking</a>
+        </div>
+        <button class="btn-success m-3" onclick="display('sectionnonvegstarters')">Back</button>
+    </div>
+            <div id="sectionchillichickeninstructions">
+                <h2 class="healthy-food-section-heading">Recipe</h2>
+                <ol class="healthy-food-section-description">
+                    <li>Marinate the chicken: In a bowl, mix chicken cubes with cornflour, all-purpose flour, egg, soy sauce, red chili powder, and salt. Let it marinate for at least 30 minutes.</li>
+                    <li>Heat oil: In a deep frying pan, heat enough oil to fry the chicken.</li>
+                    <li>Fry the chicken: Once the oil is hot, fry the marinated chicken in batches until golden and crispy. Drain on paper towels to remove excess oil.</li>
+                    <li>Prepare the sauce: In a separate pan, heat a little oil. Add minced garlic, green chilies, onions, and capsicum. Stir-fry for a couple of minutes until slightly tender.</li>
+                    <li>Make the sauce: Add soy sauce, vinegar, and red chili sauce. Stir well to combine.</li>
+                    <li>Toss the chicken: Add the fried chicken to the sauce and toss everything together until the chicken is coated.</li>
+                    <li>Garnish and serve: Garnish with spring onions and serve hot with rice or noodles.</li>
+                </ol>
+                <button class="btn-success m-3" onclick="display('sectionchillichicken')">Back</button>
+            </div>
+
+
+    
+
+            <div id="sectionprawnpepperfry">
+                <div class="menu-item-card">
+                    <h2 class="healthy-food-section-heading">Ingredients</h2>
+                    <ul class="healthy-food-section-description">
+                        <li>500g prawns, cleaned and deveined</li>
+                        <li>2 tbsp black pepper powder</li>
+                        <li>1 tbsp ginger-garlic paste</li>
+                        <li>1 tsp turmeric powder</li>
+                        <li>1 tsp cumin powder</li>
+                        <li>1 onion, finely chopped</li>
+                        <li>2 green chilies, slit</li>
+                        <li>1 sprig curry leaves</li>
+                        <li>1 tbsp lemon juice</li>
+                        <li>Salt to taste</li>
+                        <li>Oil for frying</li>
+                        <li>Coriander leaves for garnish</li>
+                    </ul>
+        
+                    <table>
+                        <tr>
+                            <th>Preparation Time</th>
+                            <th>Cooking Time</th>
+                            <th>Difficulty Level</th>
+                        </tr>
+                        <tr>
+                            <td>15-20 minutes</td>
+                            <td>20-25 minutes</td>
+                            <td>Medium</td>
+                        </tr>
+                    </table>
+        
+                    <!-- Use hash link to scroll to the instructions section -->
+                    <button class="start-cooking-btn m-5" onclick="display('sectionprawnpepperfryinstructions')">Start Cooking</button>
+                </div>
+        
+                <button class="btn-success m-3" onclick="display('sectionnonvegstarters')">Back</button>
+            </div>
+        
+            <div id="sectionprawnpepperfryinstructions">
+                <h2 class="healthy-food-section-heading">Recipe</h2>
+                <ol class="healthy-food-section-description">
+                    <li>Marinate the prawns: In a bowl, mix prawns with black pepper powder, turmeric powder, ginger-garlic paste, and salt. Let it marinate for at least 30 minutes.</li>
+                    <li>Heat oil: In a frying pan, heat enough oil to fry the prawns.</li>
+                    <li>Fry the prawns: Once the oil is hot, fry the marinated prawns until golden brown and cooked through. Remove and set aside.</li>
+                    <li>Prepare the tempering: In the same pan, add a little more oil if needed. Fry onions, green chilies, and curry leaves until the onions turn golden.</li>
+                    <li>Toss the prawns: Add the fried prawns back into the pan and toss everything together. Add lemon juice and cumin powder, and mix well.</li>
+                    <li>Garnish and serve: Garnish with coriander leaves and serve hot as a starter or side dish.</li>
+                </ol>
+                <button class="btn-success m-3" onclick="display('sectionprawnpepperfry')">Back</button>
+            </div>
+    
+
+            <div id="sectionmuttonchukka">
+                <div class="menu-item-card">
+                    <h2 class="healthy-food-section-heading">Ingredients</h2>
+                    <ul class="healthy-food-section-description">
+                        <li>500g mutton, cut into small pieces</li>
+                        <li>2 tbsp ginger-garlic paste</li>
+                        <li>2 tbsp black pepper powder</li>
+                        <li>1 tsp turmeric powder</li>
+                        <li>1 tsp cumin powder</li>
+                        <li>2 onions, finely chopped</li>
+                        <li>2 green chilies, slit</li>
+                        <li>1 sprig curry leaves</li>
+                        <li>1 tbsp lemon juice</li>
+                        <li>2 tomatoes, chopped</li>
+                        <li>1 tsp garam masala</li>
+                        <li>Salt to taste</li>
+                        <li>Oil for cooking</li>
+                        <li>Coriander leaves for garnish</li>
+                    </ul>
+        
+                    <table>
+                        <tr>
+                            <th>Preparation Time</th>
+                            <th>Cooking Time</th>
+                            <th>Difficulty Level</th>
+                        </tr>
+                        <tr>
+                            <td>15-20 minutes</td>
+                            <td>45-50 minutes</td>
+                            <td>Medium</td>
+                        </tr>
+                    </table>
+        
+                    <!-- Use hash link to scroll to the instructions section -->
+                    <button class="start-cooking-btn m-5" onclick="display('sectionmuttonchukkainstructions')">Start Cooking</button>
+                </div>
+        
+                <button class="btn-success m-3" onclick="display('sectionnonvegstarters')">Back</button>
+            </div>
+        
+            <div id="sectionmuttonchukkainstructions">
+                <h2 class="healthy-food-section-heading">Recipe</h2>
+                <ol class="healthy-food-section-description">
+                    <li>Marinate the mutton: In a bowl, mix mutton with ginger-garlic paste, black pepper powder, turmeric powder, cumin powder, and salt. Let it marinate for 1-2 hours.</li>
+                    <li>Pressure cook the mutton: In a pressure cooker, add marinated mutton, water, and cook for about 20-25 minutes (or until tender). Set aside.</li>
+                    <li>Heat oil: In a pan, heat oil and fry chopped onions, green chilies, and curry leaves until the onions turn golden brown.</li>
+                    <li>Cook tomatoes: Add chopped tomatoes and cook until they become soft and mushy.</li>
+                    <li>Prepare the masala: Add garam masala and the cooked mutton (along with any remaining stock). Stir well and cook until the mutton absorbs all the masala and becomes dry.</li>
+                    <li>Finish and serve: Garnish with coriander leaves and drizzle with lemon juice. Serve hot as a starter or with rice and roti.</li>
+                </ol>
+                <button class="btn-success m-3" onclick="display('sectionmuttonchukka')">Back</button>
+            </div>        
+    
+
+            <div id="sectioncrablollipop">
+                <div class="menu-item-card">
+                    <h2 class="healthy-food-section-heading">Ingredients</h2>
+                    <ul class="healthy-food-section-description">
+                        <li>500g crab meat, cooked and shredded</li>
+                        <li>2 tbsp ginger-garlic paste</li>
+                        <li>1 tsp red chili powder</li>
+                        <li>1 tsp turmeric powder</li>
+                        <li>1 tsp cumin powder</li>
+                        <li>1 tsp garam masala</li>
+                        <li>1 onion, finely chopped</li>
+                        <li>2 green chilies, finely chopped</li>
+                        <li>1 sprig curry leaves</li>
+                        <li>1 tbsp lemon juice</li>
+                        <li>Salt to taste</li>
+                        <li>1 cup bread crumbs</li>
+                        <li>1 egg</li>
+                        <li>Oil for frying</li>
+                        <li>Coriander leaves for garnish</li>
+                    </ul>
+        
+                    <table>
+                        <tr>
+                            <th>Preparation Time</th>
+                            <th>Cooking Time</th>
+                            <th>Difficulty Level</th>
+                        </tr>
+                        <tr>
+                            <td>20 minutes</td>
+                            <td>15 minutes</td>
+                            <td>Medium</td>
+                        </tr>
+                    </table>
+        
+                    <button class="start-cooking-btn m-5" onclick="display('sectioncrablollipopinstructions')">Start Cooking</button>
+                </div>
+        
+                <button class="btn-success m-3" onclick="display('sectionnonvegstarters')">Back</button>
+            </div>
+        
+            <div id="sectioncrablollipopinstructions">
+                <h2 class="healthy-food-section-heading">Recipe</h2>
+                <ol class="healthy-food-section-description">
+                    <li>Mix crab meat: In a bowl, combine crab meat with ginger-garlic paste, red chili powder, turmeric powder, cumin powder, garam masala, chopped onions, green chilies, curry leaves, and salt.</li>
+                    <li>Form lollipops: Shape the crab mixture into small lollipop-sized balls. Dip each in a beaten egg, then coat with bread crumbs.</li>
+                    <li>Heat oil: In a deep frying pan, heat enough oil to fry the lollipops.</li>
+                    <li>Fry the lollipops: Once the oil is hot, fry the crab lollipops until golden brown and crispy. Drain on paper towels to remove excess oil.</li>
+                    <li>Serve: Garnish with coriander leaves and drizzle lemon juice on top. Serve hot with dipping sauce of your choice.</li>
+                </ol>
+                <button class="btn-success m-3" onclick="display('sectioncrablollipop')">Back</button>
+            </div>        
+    
+
+            <div id="sectionpannerchilli">
+                <div class="menu-item-card">
+                    <h2 class="healthy-food-section-heading">Ingredients</h2>
+                    <ul class="healthy-food-section-description">
+                        <li>250g paneer, cut into cubes</li>
+                        <li>2 tbsp cornflour</li>
+                        <li>1 tbsp all-purpose flour (maida)</li>
+                        <li>1 tsp red chili powder</li>
+                        <li>1 tsp black pepper powder</li>
+                        <li>Salt to taste</li>
+                        <li>Oil for frying</li>
+                        <li>1 onion, diced</li>
+                        <li>1 capsicum, diced</li>
+                        <li>2-3 green chilies, slit</li>
+                        <li>2 tbsp soy sauce</li>
+                        <li>1 tbsp vinegar</li>
+                        <li>1 tbsp red chili sauce</li>
+                        <li>1 tbsp garlic, minced</li>
+                        <li>Spring onions for garnish</li>
+                    </ul>
+        
+                    <table>
+                        <tr>
+                            <th>Preparation Time</th>
+                            <th>Cooking Time</th>
+                            <th>Difficulty Level</th>
+                        </tr>
+                        <tr>
+                            <td>15 minutes</td>
+                            <td>20 minutes</td>
+                            <td>Medium</td>
+                        </tr>
+                    </table>
+        
+                    <button class="start-cooking-btn m-5" onclick="display('sectionpannerchilliinstructions')">Start Cooking</button>
+                </div>
+        
+                <button class="btn-success m-3" onclick="display('sectionvegstarters')">Back</button>
+            </div>
+        
+            <div id="sectionpannerchilliinstructions">
+                <h2 class="healthy-food-section-heading">Recipe</h2>
+                <ol class="healthy-food-section-description">
+                    <li>Coat the paneer: In a bowl, mix paneer cubes with cornflour, all-purpose flour, red chili powder, black pepper powder, and salt. Toss until the paneer is evenly coated.</li>
+                    <li>Fry the paneer: In a frying pan, heat oil and fry the coated paneer until golden brown and crispy. Remove and set aside.</li>
+                    <li>Prepare the sauce: In another pan, heat some oil and add minced garlic, diced onions, capsicum, and slit green chilies. Stir-fry for a couple of minutes.</li>
+                    <li>Add sauces: Pour in soy sauce, vinegar, and red chili sauce. Stir well and cook for 2-3 minutes.</li>
+                    <li>Toss the paneer: Add the fried paneer to the sauce and toss until the paneer is fully coated in the sauce mixture.</li>
+                    <li>Garnish and serve: Garnish with chopped spring onions and serve hot as a starter or with fried rice or noodles.</li>
+                </ol>
+                <button class="btn-success m-3" onclick="display('sectionpannerchilli')">Back</button>
+            </div>        
+    
+
+            <div id="sectionmushroompepperfry">
+                <div class="menu-item-card">
+                    <h2 class="healthy-food-section-heading">Ingredients</h2>
+                    <ul class="healthy-food-section-description">
+                        <li>250g mushrooms, cleaned and sliced</li>
+                        <li>2 tbsp black pepper powder</li>
+                        <li>1 tbsp ginger-garlic paste</li>
+                        <li>1 onion, finely chopped</li>
+                        <li>1 capsicum, diced</li>
+                        <li>2 green chilies, slit</li>
+                        <li>1 sprig curry leaves</li>
+                        <li>1 tsp cumin powder</li>
+                        <li>1 tsp garam masala</li>
+                        <li>1 tbsp soy sauce</li>
+                        <li>1 tbsp lemon juice</li>
+                        <li>Salt to taste</li>
+                        <li>Oil for cooking</li>
+                        <li>Coriander leaves for garnish</li>
+                    </ul>
+        
+                    <table>
+                        <tr>
+                            <th>Preparation Time</th>
+                            <th>Cooking Time</th>
+                            <th>Difficulty Level</th>
+                        </tr>
+                        <tr>
+                            <td>10 minutes</td>
+                            <td>20 minutes</td>
+                            <td>Easy</td>
+                        </tr>
+                    </table>
+        
+                    <button class="start-cooking-btn m-5" onclick="display('sectionmushroompepperfryinstructions')">Start Cooking</button>
+                </div>
+        
+                <button class="btn-success m-3" onclick="display('sectionvegstarters')">Back</button>
+            </div>
+        
+            <div id="sectionmushroompepperfryinstructions">
+                <h2 class="healthy-food-section-heading">Recipe</h2>
+                <ol class="healthy-food-section-description">
+                    <li>Heat oil: In a pan, heat some oil and add finely chopped onions, curry leaves, and slit green chilies. Sauté until the onions turn golden brown.</li>
+                    <li>Add mushrooms: Add the sliced mushrooms and cook until the mushrooms release water and become tender.</li>
+                    <li>Spice it up: Add ginger-garlic paste, cumin powder, black pepper powder, and salt. Stir and cook for 5 minutes until the spices blend well with the mushrooms.</li>
+                    <li>Add sauces: Pour in soy sauce and garam masala. Stir-fry the mushrooms for another 2-3 minutes.</li>
+                    <li>Finish and serve: Drizzle lemon juice over the cooked mushrooms and garnish with coriander leaves. Serve hot as a side dish or starter.</li>
+                </ol>
+                <button class="btn-success m-3" onclick="display('sectionmushroompepperfry')">Back</button>
+            </div>
+        
+    
+
+            <div id="sectionpannertikka">
+                <div class="menu-item-card">
+                    <h2 class="healthy-food-section-heading">Ingredients</h2>
+                    <ul class="healthy-food-section-description">
+                        <li>250g paneer, cut into cubes</li>
+                        <li>2 tbsp yogurt</li>
+                        <li>1 tbsp ginger-garlic paste</li>
+                        <li>1 tsp red chili powder</li>
+                        <li>1 tsp cumin powder</li>
+                        <li>1 tsp turmeric powder</li>
+                        <li>1 tsp garam masala</li>
+                        <li>1 tbsp lemon juice</li>
+                        <li>1 capsicum, cut into cubes</li>
+                        <li>1 onion, cut into cubes</li>
+                        <li>Salt to taste</li>
+                        <li>1 tbsp oil</li>
+                        <li>Skewers for grilling</li>
+                        <li>Chaat masala for garnish</li>
+                        <li>Coriander leaves for garnish</li>
+                    </ul>
+        
+                    <table>
+                        <tr>
+                            <th>Preparation Time</th>
+                            <th>Cooking Time</th>
+                            <th>Difficulty Level</th>
+                        </tr>
+                        <tr>
+                            <td>20 minutes</td>
+                            <td>15 minutes</td>
+                            <td>Medium</td>
+                        </tr>
+                    </table>
+        
+                    <button class="start-cooking-btn m-5" onclick="display('sectionpannertikkainstructions')">Start Cooking</button>
+                </div>
+        
+                <button class="btn-success m-3" onclick="display('sectionvegstarters')">Back</button>
+            </div>
+        
+            <div id="sectionpannertikkainstructions">
+                <h2 class="healthy-food-section-heading">Recipe</h2>
+                <ol class="healthy-food-section-description">
+                    <li>Marinate the paneer: In a bowl, mix yogurt, ginger-garlic paste, red chili powder, cumin powder, turmeric powder, garam masala, lemon juice, and salt. Add paneer cubes, capsicum, and onion cubes. Toss everything together and let it marinate for 30 minutes.</li>
+                    <li>Skewer the ingredients: Thread the marinated paneer, capsicum, and onion onto skewers, alternating between them.</li>
+                    <li>Grill the paneer: Heat a grill pan or preheat an oven. Brush the paneer skewers with oil and grill them for about 10-12 minutes, turning occasionally until evenly cooked and slightly charred.</li>
+                    <li>Garnish and serve: Sprinkle chaat masala over the paneer tikka and garnish with coriander leaves. Serve hot with mint chutney.</li>
+                </ol>
+                <button class="btn-success m-3" onclick="display('sectionpannertikka')">Back</button>
+            </div>        
+    
+
+            <div id="sectiongoldenbabycornfry">
+                <div class="menu-item-card">
+                    <h2 class="healthy-food-section-heading">Ingredients</h2>
+                    <ul class="healthy-food-section-description">
+                        <li>200g baby corn, cut into halves</li>
+                        <li>2 tbsp cornflour</li>
+                        <li>2 tbsp all-purpose flour (maida)</li>
+                        <li>1 tsp red chili powder</li>
+                        <li>1 tsp turmeric powder</li>
+                        <li>1 tsp cumin powder</li>
+                        <li>1 tsp garam masala</li>
+                        <li>1 tsp ginger-garlic paste</li>
+                        <li>Salt to taste</li>
+                        <li>Oil for deep frying</li>
+                        <li>Chaat masala for garnish</li>
+                        <li>Lemon wedges for serving</li>
+                        <li>Coriander leaves for garnish</li>
+                    </ul>
+        
+                    <table>
+                        <tr>
+                            <th>Preparation Time</th>
+                            <th>Cooking Time</th>
+                            <th>Difficulty Level</th>
+                        </tr>
+                        <tr>
+                            <td>10 minutes</td>
+                            <td>15 minutes</td>
+                            <td>Easy</td>
+                        </tr>
+                    </table>
+        
+                    <button class="start-cooking-btn m-5" onclick="display('sectiongoldenbabycornfryinstructions')">Start Cooking</button>
+                </div>
+        
+                <button class="btn-success m-3" onclick="display('sectionvegstarters')">Back</button>
+            </div>
+        
+            <div id="sectiongoldenbabycornfryinstructions">
+                <h2 class="healthy-food-section-heading">Recipe</h2>
+                <ol class="healthy-food-section-description">
+                    <li>Prepare the batter: In a bowl, mix cornflour, all-purpose flour, red chili powder, turmeric powder, cumin powder, garam masala, ginger-garlic paste, and salt. Add a little water to make a thick batter.</li>
+                    <li>Coat the baby corn: Dip the baby corn halves into the batter, ensuring they are evenly coated.</li>
+                    <li>Heat oil: In a deep frying pan, heat enough oil for deep frying.</li>
+                    <li>Fry the baby corn: Once the oil is hot, fry the coated baby corn until golden and crispy. Drain on paper towels to remove excess oil.</li>
+                    <li>Garnish and serve: Sprinkle chaat masala over the fried baby corn, garnish with coriander leaves, and serve with lemon wedges.</li>
+                </ol>
+                <button class="btn-success m-3" onclick="display('sectiongoldenbabycornfry')">Back</button>
+            </div>        
+    
+            
+
+            <div id="sectiongobimanchurian">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>1 medium cauliflower, cut into florets</li>
+                <li>1/2 cup all-purpose flour</li>
+                <li>1/4 cup cornflour</li>
+                <li>1 tsp ginger-garlic paste</li>
+                <li>1 tsp red chili powder</li>
+                <li>1/2 tsp turmeric powder</li>
+                <li>1 tsp soy sauce</li>
+                <li>1/2 tsp vinegar</li>
+                <li>Salt to taste</li>
+                <li>Oil for deep frying</li>
+                <li>2 tbsp oil (for sauce)</li>
+                <li>1 onion, chopped</li>
+                <li>1 bell pepper, chopped</li>
+                <li>2-3 green chilies, slit</li>
+                <li>2 tbsp soy sauce</li>
+                <li>1 tbsp tomato ketchup</li>
+                <li>1 tsp sugar</li>
+                <li>1 tbsp cornflour (mixed in 2 tbsp water)</li>
+                <li>Chopped spring onions for garnish</li>
+                <li>Chopped coriander leaves for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>15 minutes</td>
+                    <td>20 minutes</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectiongobimanchurianinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionvegstarters')">Back</button>
+            </div>
+
+            <div id="sectiongobimanchurianinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Prepare the batter: In a bowl, mix all-purpose flour, cornflour, ginger-garlic paste, red chili powder, turmeric powder, soy sauce, vinegar, and salt. Add water as needed to make a thick batter.</li>
+            <li>Coat the cauliflower: Dip the cauliflower florets into the batter, ensuring they are well-coated.</li>
+            <li>Fry the cauliflower: Heat oil in a deep frying pan. Fry the coated cauliflower florets until golden and crispy. Drain on paper towels.</li>
+            <li>Prepare the sauce: In a separate pan, heat 2 tbsp oil. Sauté the chopped onions, bell pepper, and green chilies until they are tender.</li>
+            <li>Add the sauces: Stir in soy sauce, tomato ketchup, and sugar. Mix well.</li>
+            <li>Thicken the sauce: Add the cornflour mixture to the pan and cook until the sauce thickens.</li>
+            <li>Combine: Add the fried cauliflower florets to the sauce and toss to coat them evenly.</li>
+            <li>Garnish and serve: Garnish with chopped spring onions and coriander leaves. Serve hot.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectiongobimanchurian')">Back</button>
+            </div>
+            
+            <div id="sectioncrabsoup">
+                <div class="menu-item-card">
+                    <h2 class="healthy-food-section-heading">Ingredients</h2>
+                    <ul class="healthy-food-section-description">
+                        <li>200g crab meat, cooked and shredded</li>
+                        <li>1 onion, finely chopped</li>
+                        <li>2 garlic cloves, minced</li>
+                        <li>1-inch piece of ginger, grated</li>
+                        <li>1 carrot, finely chopped</li>
+                        <li>1 celery stalk, finely chopped</li>
+                        <li>1 tsp black pepper powder</li>
+                        <li>1 tbsp soy sauce</li>
+                        <li>1 tsp vinegar</li>
+                        <li>1 tbsp cornflour (mixed in 2 tbsp water)</li>
+                        <li>4 cups chicken or vegetable broth</li>
+                        <li>1 egg, beaten</li>
+                        <li>Spring onions for garnish</li>
+                        <li>Salt to taste</li>
+                        <li>Oil for cooking</li>
+                    </ul>
+        
+                    <table>
+                        <tr>
+                            <th>Preparation Time</th>
+                            <th>Cooking Time</th>
+                            <th>Difficulty Level</th>
+                        </tr>
+                        <tr>
+                            <td>10 minutes</td>
+                            <td>20 minutes</td>
+                            <td>Easy</td>
+                        </tr>
+                    </table>
+        
+                    <button class="start-cooking-btn m-5" onclick="display('sectioncrabsoupinstructions')">Start Cooking</button>
+                </div>
+        
+                <button class="btn-success m-3" onclick="display('sectionsoup')">Back</button> 
+            </div>
+        
+            <div id="sectioncrabsoupinstructions">
+                <h2 class="healthy-food-section-heading">Recipe</h2>
+                <ol class="healthy-food-section-description">
+                    <li>Prepare the base: In a pot, heat some oil and sauté the chopped onions, garlic, ginger, carrots, and celery until softened.</li>
+                    <li>Add the broth: Pour in the chicken or vegetable broth and bring it to a boil.</li>
+                    <li>Season: Add soy sauce, vinegar, black pepper, and salt. Let it simmer for 5-7 minutes.</li>
+                    <li>Add crab meat: Stir in the shredded crab meat and cook for another 3-4 minutes.</li>
+                    <li>Thicken the soup: Gradually stir in the cornflour mixture to thicken the soup. Cook for 2-3 minutes.</li>
+                    <li>Add the egg: Slowly pour in the beaten egg while continuously stirring to create egg ribbons in the soup.</li>
+                    <li>Finish and serve: Garnish with chopped spring onions and serve hot.</li>
+                </ol>
+                <button class="btn-success m-3" onclick="display('sectioncrabsoup')">Back</button>
+            </div>        
+    
+
+            <div id="sectionvegsoup">
+                <div class="menu-item-card">
+                    <h2 class="healthy-food-section-heading">Ingredients</h2>
+                    <ul class="healthy-food-section-description">
+                        <li>1 onion, finely chopped</li>
+                        <li>2 garlic cloves, minced</li>
+                        <li>1-inch piece of ginger, grated</li>
+                        <li>1 carrot, diced</li>
+                        <li>1 celery stalk, diced</li>
+                        <li>1 potato, diced</li>
+                        <li>1 cup mixed vegetables (peas, corn, beans)</li>
+                        <li>1 tsp black pepper powder</li>
+                        <li>1 tbsp soy sauce</li>
+                        <li>1 tsp vinegar</li>
+                        <li>1 tbsp cornflour (mixed in 2 tbsp water)</li>
+                        <li>4 cups vegetable broth</li>
+                        <li>1 cup spinach leaves, chopped</li>
+                        <li>Salt to taste</li>
+                        <li>Oil for cooking</li>
+                        <li>Spring onions for garnish</li>
+                    </ul>
+        
+                    <table>
+                        <tr>
+                            <th>Preparation Time</th>
+                            <th>Cooking Time</th>
+                            <th>Difficulty Level</th>
+                        </tr>
+                        <tr>
+                            <td>15 minutes</td>
+                            <td>20 minutes</td>
+                            <td>Easy</td>
+                        </tr>
+                    </table>
+        
+                    <button class="start-cooking-btn m-5" onclick="display('sectionvegsoupinstructions')">Start Cooking</button>
+                </div>
+        
+                <button class="btn-success m-3" onclick="display('sectionsoup')">Back</button>
+            </div>
+        
+            <div id="sectionvegsoupinstructions">
+                <h2 class="healthy-food-section-heading">Recipe</h2>
+                <ol class="healthy-food-section-description">
+                    <li>Prepare the base: In a pot, heat some oil and sauté the chopped onions, garlic, ginger, carrots, celery, and potato until they begin to soften.</li>
+                    <li>Add the broth: Pour in the vegetable broth and bring it to a boil.</li>
+                    <li>Season: Add soy sauce, vinegar, black pepper, and salt. Let it simmer for 10-15 minutes.</li>
+                    <li>Add mixed vegetables: Stir in the mixed vegetables and cook until they are tender.</li>
+                    <li>Thicken the soup: Gradually stir in the cornflour mixture to thicken the soup. Cook for an additional 2-3 minutes.</li>
+                    <li>Add spinach: Stir in the chopped spinach leaves and cook until wilted.</li>
+                    <li>Finish and serve: Garnish with chopped spring onions and serve hot.</li>
+                </ol>
+                <button class="btn-success m-3" onclick="display('sectionvegsoup')">Back</button>
+            </div>        
+    
+
+            <div id="sectionchickensoup">
+                <div class="menu-item-card">
+                    <h2 class="healthy-food-section-heading">Ingredients</h2>
+                    <ul class="healthy-food-section-description">
+                        <li>300g chicken breast, diced</li>
+                        <li>1 onion, finely chopped</li>
+                        <li>2 garlic cloves, minced</li>
+                        <li>1-inch piece of ginger, grated</li>
+                        <li>1 carrot, diced</li>
+                        <li>1 celery stalk, diced</li>
+                        <li>1 potato, diced</li>
+                        <li>1 cup green beans, chopped</li>
+                        <li>4 cups chicken broth</li>
+                        <li>1 cup corn kernels</li>
+                        <li>1 tsp dried thyme</li>
+                        <li>1 tsp black pepper powder</li>
+                        <li>Salt to taste</li>
+                        <li>2 tbsp olive oil</li>
+                        <li>Chopped parsley for garnish</li>
+                        <li>1 tbsp flour (optional, for thickening)</li>
+                    </ul>
+        
+                    <table>
+                        <tr>
+                            <th>Preparation Time</th>
+                            <th>Cooking Time</th>
+                            <th>Difficulty Level</th>
+                        </tr>
+                        <tr>
+                            <td>15 minutes</td>
+                            <td>30 minutes</td>
+                            <td>Easy</td>
+                        </tr>
+                    </table>
+        
+                    <button class="start-cooking-btn m-5" onclick="display('sectionchickensoupinstructions')">Start Cooking</button>
+                </div>
+        
+                <button class="btn-success m-3" onclick="display('sectionsoup')">Back</button>
+            </div>
+        
+            <div id="sectionchickensoupinstructions">
+                <h2 class="healthy-food-section-heading">Recipe</h2>
+                <ol class="healthy-food-section-description">
+                    <li>Sauté vegetables: In a large pot, heat olive oil. Add the chopped onions, garlic, and ginger, and sauté until softened.</li>
+                    <li>Add chicken: Add the diced chicken breast and cook until it is no longer pink.</li>
+                    <li>Add vegetables: Stir in the diced carrot, celery, potato, and green beans. Cook for a few minutes.</li>
+                    <li>Add broth: Pour in the chicken broth and bring to a boil. Reduce heat and let it simmer until the vegetables are tender and the chicken is cooked through, about 20 minutes.</li>
+                    <li>Season: Add corn kernels, dried thyme, black pepper, and salt. Cook for another 5 minutes.</li>
+                    <li>Thicken (optional): If you prefer a thicker soup, mix a tablespoon of flour with a bit of water and stir it into the soup. Cook for an additional 2-3 minutes.</li>
+                    <li>Serve: Garnish with chopped parsley and serve hot.</li>
+                </ol>
+                <button class="btn-success m-3" onclick="display('sectionchickensoup')">Back</button>
+            </div>
+
+            <div id="sectionmuttonbonesoup">
+                <div class="menu-item-card">
+                    <h2 class="healthy-food-section-heading">Ingredients</h2>
+                    <ul class="healthy-food-section-description">
+                        <li>500g mutton bones (with a little meat on them)</li>
+                        <li>1 onion, finely chopped</li>
+                        <li>2 garlic cloves, minced</li>
+                        <li>1-inch piece of ginger, grated</li>
+                        <li>1 carrot, diced</li>
+                        <li>1 celery stalk, diced</li>
+                        <li>1 tomato, chopped</li>
+                        <li>1 tsp black pepper powder</li>
+                        <li>1 tsp cumin seeds</li>
+                        <li>1 tsp coriander powder</li>
+                        <li>1 tsp turmeric powder</li>
+                        <li>1 tbsp soy sauce</li>
+                        <li>4 cups water</li>
+                        <li>1 tbsp cornflour (mixed in 2 tbsp water)</li>
+                        <li>Salt to taste</li>
+                        <li>Oil for cooking</li>
+                        <li>Spring onions for garnish</li>
+                        <li>Fresh coriander leaves for garnish</li>
+                    </ul>
+        
+                    <table>
+                        <tr>
+                            <th>Preparation Time</th>
+                            <th>Cooking Time</th>
+                            <th>Difficulty Level</th>
+                        </tr>
+                        <tr>
+                            <td>15 minutes</td>
+                            <td>1 hour</td>
+                            <td>Medium</td>
+                        </tr>
+                    </table>
+        
+                    <button class="start-cooking-btn m-5" onclick="display('sectionmuttonbonesoupinstructions')">Start Cooking</button>
+                </div>
+        
+                <button class="btn-success m-3" onclick="display('sectionsoup')">Back</button>
+            </div>
+        
+            <div id="sectionmuttonbonesoupinstructions">
+                <h2 class="healthy-food-section-heading">Recipe</h2>
+                <ol class="healthy-food-section-description">
+                    <li>Prepare the base: In a large pot, heat some oil and sauté the chopped onions, garlic, ginger, carrots, celery, and tomato until softened.</li>
+                    <li>Add the bones: Add the mutton bones and cook for a few minutes until they are well-seared.</li>
+                    <li>Add spices: Stir in black pepper powder, cumin seeds, coriander powder, turmeric powder, and salt. Cook for another 2-3 minutes to blend the spices with the meat.</li>
+                    <li>Add water: Pour in the water and bring it to a boil. Reduce the heat to low and let it simmer for about 45 minutes to 1 hour, until the meat is tender and the flavors are well-developed.</li>
+                    <li>Thicken the soup: Gradually stir in the cornflour mixture to thicken the soup. Cook for an additional 5 minutes.</li>
+                    <li>Finish and serve: Garnish with chopped spring onions and fresh coriander leaves. Serve hot.</li>
+                </ol>
+                <button class="btn-success m-3" onclick="display('sectionmuttonbonesoup')">Back</button>
+            </div>        
+    
+
+            <div id="sectioncreamymushroomsoup">
+                <div class="menu-item-card">
+                    <h2 class="healthy-food-section-heading">Ingredients</h2>
+                    <ul class="healthy-food-section-description">
+                        <li>300g mushrooms, sliced</li>
+                        <li>1 onion, finely chopped</li>
+                        <li>2 garlic cloves, minced</li>
+                        <li>1-inch piece of ginger, grated</li>
+                        <li>1 potato, diced</li>
+                        <li>1 cup vegetable broth</li>
+                        <li>1 cup heavy cream</li>
+                        <li>2 tbsp butter</li>
+                        <li>1 tbsp olive oil</li>
+                        <li>1 tsp thyme (dried or fresh)</li>
+                        <li>1 tsp black pepper powder</li>
+                        <li>Salt to taste</li>
+                        <li>Chopped parsley for garnish</li>
+                        <li>1 tbsp flour (optional, for thickening)</li>
+                    </ul>
+        
+                    <table>
+                        <tr>
+                            <th>Preparation Time</th>
+                            <th>Cooking Time</th>
+                            <th>Difficulty Level</th>
+                        </tr>
+                        <tr>
+                            <td>10 minutes</td>
+                            <td>20 minutes</td>
+                            <td>Easy</td>
+                        </tr>
+                    </table>
+        
+                    <button class="start-cooking-btn m-5" onclick="display('sectioncreamymushroomsoupinstructions')">Start Cooking</button>
+                </div>
+        
+                <button class="btn-success m-3" onclick="display('sectionsoup')">Back</button>
+            </div>
+        
+            <div id="sectioncreamymushroomsoupinstructions">
+                <h2 class="healthy-food-section-heading">Recipe</h2>
+                <ol class="healthy-food-section-description">
+                    <li>Sauté vegetables: In a large pot, heat olive oil and butter. Add the chopped onions, garlic, and ginger, and sauté until softened.</li>
+                    <li>Add mushrooms: Add the sliced mushrooms and cook until they release their moisture and become tender.</li>
+                    <li>Add potato and broth: Stir in the diced potato and vegetable broth. Bring to a boil, then reduce heat and let it simmer until the potato is soft.</li>
+                    <li>Blend the soup: Use an immersion blender to blend the soup until smooth. Alternatively, transfer in batches to a blender and blend until creamy.</li>
+                    <li>Finish the soup: Return the blended soup to the pot. Stir in the heavy cream, thyme, black pepper, and salt. Cook on low heat for another 5 minutes. If the soup is too thin, you can mix a tablespoon of flour with a bit of water and stir it into the soup to thicken.</li>
+                    <li>Serve: Garnish with chopped parsley and serve hot.</li>
+                </ol>
+                <button class="btn-success m-3" onclick="display('sectioncreamymushroomsoup')">Back</button>
+            </div>        
+    
+
+            <div id="sectionfishfinger"> 
+                <div class="menu-item-card">
+                    <h2 class="healthy-food-section-heading">Ingredients</h2>
+                    <ul class="healthy-food-section-description">
+                        <li>500g white fish fillets (e.g., cod or haddock), cut into strips</li>
+                        <li>1 cup all-purpose flour</li>
+                        <li>1 cup breadcrumbs</li>
+                        <li>1/2 cup grated Parmesan cheese</li>
+                        <li>2 large eggs, beaten</li>
+                        <li>1 tsp paprika</li>
+                        <li>1 tsp garlic powder</li>
+                        <li>1/2 tsp black pepper powder</li>
+                        <li>Salt to taste</li>
+                        <li>Oil for frying</li>
+                        <li>Lemon wedges for serving</li>
+                        <li>Fresh parsley for garnish</li>
+                    </ul>
+        
+                    <table>
+                        <tr>
+                            <th>Preparation Time</th>
+                            <th>Cooking Time</th>
+                            <th>Difficulty Level</th>
+                        </tr>
+                        <tr>
+                            <td>15 minutes</td>
+                            <td>15 minutes</td>
+                            <td>Easy</td>
+                        </tr>
+                    </table>
+        
+                    <button class="start-cooking-btn m-5" onclick="display('sectionfishfingerinstructions')">Start Cooking</button>
+                </div>
+        
+                <button class="btn-success m-3" onclick="display('sectionfish')">Back</button>
+            </div>
+        
+            <div id="sectionfishfingerinstructions"> 
+                <h2 class="healthy-food-section-heading">Recipe</h2>
+                <ol class="healthy-food-section-description">
+                    <li>Prepare the coating: In a shallow bowl, combine the all-purpose flour with a pinch of salt and pepper. In another bowl, mix the breadcrumbs with the grated Parmesan cheese, paprika, garlic powder, and a pinch of salt and pepper. In a third bowl, beat the eggs.</li>
+                    <li>Coat the fish: Dredge each fish strip in the flour, shaking off the excess. Dip it into the beaten eggs, then coat it with the breadcrumb mixture, pressing down lightly to ensure the coating sticks.</li>
+                    <li>Heat oil: In a frying pan, heat enough oil to shallow fry the fish fingers over medium heat.</li>
+                    <li>Fry the fish fingers: Add the coated fish strips to the hot oil and cook until golden brown and crispy on all sides, about 3-4 minutes per side. Remove and drain on paper towels.</li>
+                    <li>Serve: Serve the fish fingers hot with lemon wedges and garnish with fresh parsley.</li>
+                </ol>
+                <button class="btn-success m-3" onclick="display('sectionfishfinger')">Back</button> 
+            </div>
+            
+            
+
+    <div id="sectionvanjaramgravy">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>500g Vanjaram fish fillets (or any firm white fish)</li>
+                <li>2 tbsp oil</li>
+                <li>1 onion, finely chopped</li>
+                <li>2 garlic cloves, minced</li>
+                <li>1-inch piece of ginger, grated</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1 tsp turmeric powder</li>
+                <li>1 tsp red chili powder</li>
+                <li>1 tsp coriander powder</li>
+                <li>1/2 tsp cumin powder</li>
+                <li>1/2 tsp garam masala</li>
+                <li>1 cup coconut milk</li>
+                <li>1 cup water</li>
+                <li>Salt to taste</li>
+                <li>Coriander leaves for garnish</li>
+                <li>Juice of 1 lemon</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>15 minutes</td>
+                    <td>30 minutes</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionvanjaramgravyinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionfish')">Back</button>
+    </div>
+
+    <div id="sectionvanjaramgravyinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Heat oil: In a large pan, heat the oil over medium heat.</li>
+            <li>Sauté aromatics: Add the chopped onions and sauté until they are golden brown. Add the minced garlic and grated ginger, cooking for an additional 1-2 minutes.</li>
+            <li>Add tomatoes and spices: Stir in the chopped tomatoes and cook until they are softened. Add turmeric powder, red chili powder, coriander powder, cumin powder, and salt. Cook for a few minutes to let the spices blend.</li>
+            <li>Cook the fish: Add the fish fillets to the pan and cook for 5-7 minutes, turning occasionally until the fish is cooked through.</li>
+            <li>Add liquids: Pour in the coconut milk and water. Stir well and bring to a simmer. Cook for another 10 minutes, allowing the gravy to thicken slightly.</li>
+            <li>Finish and serve: Stir in the garam masala and lemon juice. Garnish with fresh coriander leaves and serve hot with rice or roti.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionvanjaramgravy')">Back</button>
+    </div>
+
+    
+
+    <div id="sectionfishfry">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>500g fish fillets (e.g., tilapia or cod), cut into pieces</li>
+                <li>1/2 cup all-purpose flour</li>
+                <li>1/2 cup cornflour</li>
+                <li>1 tsp paprika</li>
+                <li>1 tsp garlic powder</li>
+                <li>1/2 tsp black pepper powder</li>
+                <li>1/2 tsp turmeric powder</li>
+                <li>1 tsp red chili powder</li>
+                <li>1 tsp cumin powder</li>
+                <li>1 tsp coriander powder</li>
+                <li>1 tsp lemon juice</li>
+                <li>1 egg, beaten</li>
+                <li>Oil for frying</li>
+                <li>Salt to taste</li>
+                <li>Lemon wedges for serving</li>
+                <li>Chopped fresh coriander for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>15 minutes</td>
+                    <td>15 minutes</td>
+                    <td>Easy</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionfishfryinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionfish')">Back</button>
+    </div>
+
+    <div id="sectionfishfryinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Prepare the coating: In a bowl, mix together all-purpose flour, cornflour, paprika, garlic powder, black pepper powder, turmeric powder, red chili powder, cumin powder, coriander powder, and salt.</li>
+            <li>Marinate the fish: Rub the fish pieces with lemon juice and a little salt. Let it marinate for 10 minutes.</li>
+            <li>Coat the fish: Dip each piece of fish into the beaten egg, then coat it thoroughly with the flour mixture.</li>
+            <li>Heat oil: In a frying pan, heat enough oil to shallow fry the fish over medium heat.</li>
+            <li>Fry the fish: Add the coated fish pieces to the hot oil and cook until golden brown and crispy on both sides, about 3-4 minutes per side. Remove and drain on paper towels.</li>
+            <li>Serve: Garnish with chopped fresh coriander and serve hot with lemon wedges.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionfishfry')">Back</button>
+    </div>
+
+    
+
+    <div id="sectionsuraputtu">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>300g Surah (or other firm fish), cleaned and cut into small pieces</li>
+                <li>2 tbsp oil</li>
+                <li>1 onion, finely chopped</li>
+                <li>2 garlic cloves, minced</li>
+                <li>1-inch piece of ginger, grated</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1 green chili, slit</li>
+                <li>1 tsp turmeric powder</li>
+                <li>1 tsp red chili powder</li>
+                <li>1 tsp coriander powder</li>
+                <li>1/2 tsp cumin powder</li>
+                <li>1/2 tsp garam masala</li>
+                <li>1/2 cup grated coconut</li>
+                <li>1 cup water</li>
+                <li>Salt to taste</li>
+                <li>Chopped coriander leaves for garnish</li>
+                <li>Juice of 1 lemon</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>15 minutes</td>
+                    <td>25 minutes</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionsuraputtuinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionfish')">Back</button>
+    </div>
+
+    <div id="sectionsuraputtuinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Heat oil: In a large pan, heat the oil over medium heat.</li>
+            <li>Sauté aromatics: Add the chopped onions and sauté until golden brown. Add the minced garlic, grated ginger, and slit green chili, cooking for an additional 1-2 minutes.</li>
+            <li>Add tomatoes and spices: Stir in the chopped tomatoes and cook until they soften. Add turmeric powder, red chili powder, coriander powder, cumin powder, and salt. Cook for a few minutes until the spices are well-blended.</li>
+            <li>Cook the fish: Add the Surah pieces to the pan and cook for 5-7 minutes, turning occasionally until the fish is cooked through.</li>
+            <li>Add coconut and water: Stir in the grated coconut and water. Simmer for another 10-15 minutes, allowing the flavors to meld and the gravy to thicken.</li>
+            <li>Finish and serve: Stir in the garam masala and lemon juice. Garnish with fresh coriander leaves and serve hot with rice or roti.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionsuraputtu')">Back</button>
+    </div>
+    
+
+    <div id="sectionfishtandoor">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>500g fish fillets (e.g., salmon or cod), cut into chunks</li>
+                <li>1 cup plain yogurt</li>
+                <li>2 tbsp lemon juice</li>
+                <li>2 tbsp tandoori masala</li>
+                <li>1 tbsp ginger-garlic paste</li>
+                <li>1 tsp red chili powder</li>
+                <li>1/2 tsp turmeric powder</li>
+                <li>1/2 tsp cumin powder</li>
+                <li>1/2 tsp coriander powder</li>
+                <li>1/2 tsp garam masala</li>
+                <li>Salt to taste</li>
+                <li>2 tbsp oil (for brushing)</li>
+                <li>Chopped fresh coriander for garnish</li>
+                <li>Lemon wedges for serving</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>15 minutes</td>
+                    <td>20 minutes</td>
+                    <td>Easy</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionfishtandoorinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionfish')">Back</button>
+    </div>
+
+    <div id="sectionfishtandoorinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Prepare the marinade: In a large bowl, mix together plain yogurt, lemon juice, tandoori masala, ginger-garlic paste, red chili powder, turmeric powder, cumin powder, coriander powder, garam masala, and salt.</li>
+            <li>Marinate the fish: Add the fish chunks to the marinade and coat them well. Cover and refrigerate for at least 1 hour, or overnight for best results.</li>
+            <li>Preheat the oven: Preheat your oven to 200°C (400°F). If using a grill, preheat it to medium-high heat.</li>
+            <li>Prepare for cooking: Line a baking sheet with parchment paper or lightly oil the grill rack. Place the marinated fish chunks on the prepared surface.</li>
+            <li>Cook the fish: Brush the fish with a little oil. Bake in the preheated oven for 15-20 minutes, or grill for about 10-12 minutes, turning halfway through, until the fish is cooked through and has a slightly charred exterior.</li>
+            <li>Serve: Garnish with chopped fresh coriander and serve hot with lemon wedges.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionfishtandoor')">Back</button>
+    </div>
+
+
+
+    <div id="sectionvegbiryani">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>1 1/2 cups basmati rice</li>
+                <li>2 tbsp oil or ghee</li>
+                <li>1 large onion, thinly sliced</li>
+                <li>2 garlic cloves, minced</li>
+                <li>1-inch piece of ginger, grated</li>
+                <li>1 green chili, slit</li>
+                <li>1 cup mixed vegetables (carrots, peas, beans, and potatoes), chopped</li>
+                <li>1 cup plain yogurt</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1/4 cup chopped fresh coriander leaves</li>
+                <li>1/4 cup chopped fresh mint leaves</li>
+                <li>2 tbsp biryani masala</li>
+                <li>1 tsp turmeric powder</li>
+                <li>1 tsp red chili powder</li>
+                <li>1/2 tsp cumin powder</li>
+                <li>1/2 tsp coriander powder</li>
+                <li>1/4 tsp garam masala</li>
+                <li>2 cups water</li>
+                <li>Salt to taste</li>
+                <li>Fried onions for garnish (optional)</li>
+                <li>Chopped fresh coriander and mint for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>15 minutes</td>
+                    <td>30 minutes</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionvegbiryaninstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionmaincourse')">Back</button>
+    </div>
+
+    <div id="sectionvegbiryaninstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Rinse the rice: Wash the basmati rice under cold water until the water runs clear. Soak for 20 minutes, then drain.</li>
+            <li>Cook the vegetables: In a large pot or pressure cooker, heat oil or ghee over medium heat. Add the sliced onions and sauté until golden brown. Add the minced garlic, grated ginger, and green chili, and cook for another 1-2 minutes.</li>
+            <li>Add vegetables and spices: Stir in the chopped mixed vegetables and cook for a few minutes. Add the biryani masala, turmeric powder, red chili powder, cumin powder, coriander powder, and salt. Cook until the spices are well-blended.</li>
+            <li>Add yogurt and tomatoes: Mix in the plain yogurt and chopped tomatoes. Cook until the tomatoes are softened and the oil starts to separate from the mixture.</li>
+            <li>Add rice and water: Gently fold in the soaked rice. Add water and bring to a boil. Reduce the heat to low, cover, and simmer for 20 minutes, or until the rice is cooked and the water is absorbed.</li>
+            <li>Finish and serve: Once the rice is cooked, turn off the heat and let it sit covered for 5 minutes. Fluff the rice with a fork and garnish with chopped fresh coriander, mint leaves, and fried onions if using. Serve hot.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionvegbiryani')">Back</button>
+    </div>
+
+    
+
+    <div id="sectionmuttonbiryani">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>500g mutton, cut into pieces</li>
+                <li>1 1/2 cups basmati rice</li>
+                <li>2 tbsp oil or ghee</li>
+                <li>2 large onions, thinly sliced</li>
+                <li>3 garlic cloves, minced</li>
+                <li>1-inch piece of ginger, grated</li>
+                <li>2 green chilies, slit</li>
+                <li>1 cup plain yogurt</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1/4 cup chopped fresh coriander leaves</li>
+                <li>1/4 cup chopped fresh mint leaves</li>
+                <li>2 tbsp biryani masala</li>
+                <li>1 tsp turmeric powder</li>
+                <li>1 tsp red chili powder</li>
+                <li>1/2 tsp cumin powder</li>
+                <li>1/2 tsp coriander powder</li>
+                <li>1/2 tsp garam masala</li>
+                <li>2 cups water</li>
+                <li>Salt to taste</li>
+                <li>Fried onions for garnish (optional)</li>
+                <li>Chopped fresh coriander and mint for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>20 minutes</td>
+                    <td>45 minutes</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionmuttonbiryaniinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionmaincourse')">Back</button>
+    </div>
+
+    <div id="sectionmuttonbiryaniinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Rinse the rice: Wash the basmati rice under cold water until the water runs clear. Soak for 20 minutes, then drain.</li>
+            <li>Cook the mutton: In a large pot or pressure cooker, heat oil or ghee over medium heat. Add the sliced onions and sauté until golden brown. Add the minced garlic, grated ginger, and green chilies, and cook for another 2-3 minutes.</li>
+            <li>Add mutton and spices: Add the mutton pieces to the pot and cook until they are browned. Stir in the biryani masala, turmeric powder, red chili powder, cumin powder, coriander powder, and salt. Cook for 5-7 minutes until the spices are well-blended.</li>
+            <li>Add yogurt and tomatoes: Mix in the plain yogurt and chopped tomatoes. Cook until the tomatoes are softened and the oil starts to separate from the mixture. Add a little water if needed to make a thick gravy.</li>
+            <li>Add rice and water: Gently fold in the soaked rice. Add 2 cups of water and bring to a boil. Reduce the heat to low, cover, and simmer for 30-35 minutes, or until the rice is cooked and the water is absorbed.</li>
+            <li>Finish and serve: Once the biryani is cooked, turn off the heat and let it sit covered for 10 minutes. Fluff the rice with a fork and garnish with chopped fresh coriander, mint leaves, and fried onions if using. Serve hot.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionmuttonbiryani')">Back</button>
+    </div> 
+
+    
+
+    <div id="sectionchickenbiryani">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>500g chicken, cut into pieces</li>
+                <li>1 1/2 cups basmati rice</li>
+                <li>2 tbsp oil or ghee</li>
+                <li>2 large onions, thinly sliced</li>
+                <li>3 garlic cloves, minced</li>
+                <li>1-inch piece of ginger, grated</li>
+                <li>2 green chilies, slit</li>
+                <li>1 cup plain yogurt</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1/4 cup chopped fresh coriander leaves</li>
+                <li>1/4 cup chopped fresh mint leaves</li>
+                <li>2 tbsp biryani masala</li>
+                <li>1 tsp turmeric powder</li>
+                <li>1 tsp red chili powder</li>
+                <li>1/2 tsp cumin powder</li>
+                <li>1/2 tsp coriander powder</li>
+                <li>1/2 tsp garam masala</li>
+                <li>2 cups water</li>
+                <li>Salt to taste</li>
+                <li>Fried onions for garnish (optional)</li>
+                <li>Chopped fresh coriander and mint for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>20 minutes</td>
+                    <td>40 minutes</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionchickenbiryaniinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionmaincourse')">Back</button>
+    </div>
+
+    <div id="sectionchickenbiryaniinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Rinse the rice: Wash the basmati rice under cold water until the water runs clear. Soak for 20 minutes, then drain.</li>
+            <li>Cook the chicken: In a large pot or pressure cooker, heat oil or ghee over medium heat. Add the sliced onions and sauté until golden brown. Add the minced garlic, grated ginger, and green chilies, and cook for another 2-3 minutes.</li>
+            <li>Add chicken and spices: Add the chicken pieces to the pot and cook until they are browned. Stir in the biryani masala, turmeric powder, red chili powder, cumin powder, coriander powder, and salt. Cook for 5-7 minutes until the spices are well-blended.</li>
+            <li>Add yogurt and tomatoes: Mix in the plain yogurt and chopped tomatoes. Cook until the tomatoes are softened and the oil starts to separate from the mixture. Add a little water if needed to make a thick gravy.</li>
+            <li>Add rice and water: Gently fold in the soaked rice. Add 2 cups of water and bring to a boil. Reduce the heat to low, cover, and simmer for 30 minutes, or until the rice is cooked and the water is absorbed.</li>
+            <li>Finish and serve: Once the biryani is cooked, turn off the heat and let it sit covered for 10 minutes. Fluff the rice with a fork and garnish with chopped fresh coriander, mint leaves, and fried onions if using. Serve hot.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionchickenbiryani')">Back</button>
+    </div>
+
+    
+
+    <div id="sectionfishbiryani">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>500g fish fillets (e.g., salmon or tilapia), cut into pieces</li>
+                <li>1 1/2 cups basmati rice</li>
+                <li>2 tbsp oil or ghee</li>
+                <li>2 large onions, thinly sliced</li>
+                <li>3 garlic cloves, minced</li>
+                <li>1-inch piece of ginger, grated</li>
+                <li>2 green chilies, slit</li>
+                <li>1 cup plain yogurt</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1/4 cup chopped fresh coriander leaves</li>
+                <li>1/4 cup chopped fresh mint leaves</li>
+                <li>2 tbsp biryani masala</li>
+                <li>1 tsp turmeric powder</li>
+                <li>1 tsp red chili powder</li>
+                <li>1/2 tsp cumin powder</li>
+                <li>1/2 tsp coriander powder</li>
+                <li>1/2 tsp garam masala</li>
+                <li>2 cups water</li>
+                <li>Salt to taste</li>
+                <li>Fried onions for garnish (optional)</li>
+                <li>Chopped fresh coriander and mint for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>20 minutes</td>
+                    <td>40 minutes</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionfishbiryaniinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionmaincourse')">Back</button>
+    </div>
+
+    <div id="sectionfishbiryaniinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Rinse the rice: Wash the basmati rice under cold water until the water runs clear. Soak for 20 minutes, then drain.</li>
+            <li>Cook the fish: In a large pot or pressure cooker, heat oil or ghee over medium heat. Add the sliced onions and sauté until golden brown. Add the minced garlic, grated ginger, and green chilies, and cook for another 2-3 minutes.</li>
+            <li>Add fish and spices: Add the fish pieces to the pot and cook until they are lightly browned. Stir in the biryani masala, turmeric powder, red chili powder, cumin powder, coriander powder, and salt. Cook for 5-7 minutes until the spices are well-blended.</li>
+            <li>Add yogurt and tomatoes: Mix in the plain yogurt and chopped tomatoes. Cook until the tomatoes are softened and the oil starts to separate from the mixture. Add a little water if needed to make a thick gravy.</li>
+            <li>Add rice and water: Gently fold in the soaked rice. Add 2 cups of water and bring to a boil. Reduce the heat to low, cover, and simmer for 30 minutes, or until the rice is cooked and the water is absorbed.</li>
+            <li>Finish and serve: Once the biryani is cooked, turn off the heat and let it sit covered for 10 minutes. Fluff the rice with a fork and garnish with chopped fresh coriander, mint leaves, and fried onions if using. Serve hot.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionfishbiryani')">Back</button>
+    </div>
+
+    
+
+    <div id="sectionmushroombiryani">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>500g mushrooms, sliced</li>
+                <li>1 1/2 cups basmati rice</li>
+                <li>2 tbsp oil or ghee</li>
+                <li>2 large onions, thinly sliced</li>
+                <li>3 garlic cloves, minced</li>
+                <li>1-inch piece of ginger, grated</li>
+                <li>2 green chilies, slit</li>
+                <li>1 cup plain yogurt</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1/4 cup chopped fresh coriander leaves</li>
+                <li>1/4 cup chopped fresh mint leaves</li>
+                <li>2 tbsp biryani masala</li>
+                <li>1 tsp turmeric powder</li>
+                <li>1 tsp red chili powder</li>
+                <li>1/2 tsp cumin powder</li>
+                <li>1/2 tsp coriander powder</li>
+                <li>1/2 tsp garam masala</li>
+                <li>2 cups water</li>
+                <li>Salt to taste</li>
+                <li>Fried onions for garnish (optional)</li>
+                <li>Chopped fresh coriander and mint for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>20 minutes</td>
+                    <td>35 minutes</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionmushroombiryaniinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionmaincourse')">Back</button>
+    </div>
+
+    <div id="sectionmushroombiryaniinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Rinse the rice: Wash the basmati rice under cold water until the water runs clear. Soak for 20 minutes, then drain.</li>
+            <li>Cook the mushrooms: In a large pot or pressure cooker, heat oil or ghee over medium heat. Add the sliced onions and sauté until golden brown. Add the minced garlic, grated ginger, and green chilies, and cook for another 2-3 minutes.</li>
+            <li>Add mushrooms and spices: Add the sliced mushrooms to the pot and cook until they are tender. Stir in the biryani masala, turmeric powder, red chili powder, cumin powder, coriander powder, and salt. Cook for 5-7 minutes until the spices are well-blended.</li>
+            <li>Add yogurt and tomatoes: Mix in the plain yogurt and chopped tomatoes. Cook until the tomatoes are softened and the oil starts to separate from the mixture. Add a little water if needed to make a thick gravy.</li>
+            <li>Add rice and water: Gently fold in the soaked rice. Add 2 cups of water and bring to a boil. Reduce the heat to low, cover, and simmer for 25-30 minutes, or until the rice is cooked and the water is absorbed.</li>
+            <li>Finish and serve: Once the biryani is cooked, turn off the heat and let it sit covered for 10 minutes. Fluff the rice with a fork and garnish with chopped fresh coriander, mint leaves, and fried onions if using. Serve hot.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionmushroombiryani')">Back</button>
+    </div>
+    
+
+    <div id="sectionvegnoodles">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>200g noodles</li>
+                <li>1 tbsp oil</li>
+                <li>1 large onion, thinly sliced</li>
+                <li>2 garlic cloves, minced</li>
+                <li>1-inch piece of ginger, grated</li>
+                <li>1 cup mixed vegetables (carrots, bell peppers, peas, and beans), thinly sliced</li>
+                <li>2 tbsp soy sauce</li>
+                <li>1 tbsp hoisin sauce (optional)</li>
+                <li>1 tsp sesame oil (optional)</li>
+                <li>1 tbsp vinegar</li>
+                <li>1 tsp sugar</li>
+                <li>Salt to taste</li>
+                <li>Black pepper to taste</li>
+                <li>Chopped spring onions for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>10 minutes</td>
+                    <td>20 minutes</td>
+                    <td>Easy</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionvegnoodlesinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionnoodles')">Back</button>
+    </div>
+
+    <div id="sectionvegnoodlesinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Cook the noodles: Boil water in a pot, add the noodles, and cook according to the package instructions until they are al dente. Drain and set aside.</li>
+            <li>Prepare the vegetables: Heat oil in a large pan or wok over medium heat. Add the sliced onions and sauté until they are translucent. Add the minced garlic, grated ginger, and cook for another 1-2 minutes.</li>
+            <li>Add mixed vegetables: Add the mixed vegetables to the pan and stir-fry for 4-5 minutes until they are tender-crisp.</li>
+            <li>Add sauces and seasonings: Stir in the soy sauce, hoisin sauce (if using), sesame oil (if using), vinegar, and sugar. Mix well and cook for 2 minutes.</li>
+            <li>Add noodles: Gently fold in the cooked noodles and mix everything thoroughly. Cook for another 2-3 minutes to ensure the noodles are heated through and well coated with the sauces.</li>
+            <li>Finish and serve: Adjust seasoning with salt and black pepper to taste. Garnish with chopped spring onions. Serve hot.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionnoodles')">Back</button>
+    </div>
+
+    
+
+    <div id="sectionpannernoodles">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>200g noodles</li>
+                <li>200g paneer, cubed</li>
+                <li>2 tbsp oil</li>
+                <li>1 large onion, thinly sliced</li>
+                <li>2 garlic cloves, minced</li>
+                <li>1-inch piece of ginger, grated</li>
+                <li>1 cup mixed vegetables (carrots, bell peppers, peas, and beans), thinly sliced</li>
+                <li>2 tbsp soy sauce</li>
+                <li>1 tbsp hoisin sauce (optional)</li>
+                <li>1 tsp sesame oil (optional)</li>
+                <li>1 tbsp vinegar</li>
+                <li>1 tsp sugar</li>
+                <li>Salt to taste</li>
+                <li>Black pepper to taste</li>
+                <li>Chopped spring onions for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>10 minutes</td>
+                    <td>25 minutes</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionpannernoodlesinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionnoodles')">Back</button> 
+    </div>
+
+    <div id="sectionpannernoodlesinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Cook the noodles: Boil water in a pot, add the noodles, and cook according to the package instructions until they are al dente. Drain and set aside.</li>
+            <li>Cook the paneer: Heat 1 tbsp oil in a large pan over medium heat. Add the paneer cubes and cook until they are golden brown on all sides. Remove and set aside.</li>
+            <li>Prepare the vegetables: In the same pan, add another 1 tbsp oil. Heat over medium heat, then add the sliced onions and sauté until translucent. Add the minced garlic, grated ginger, and cook for another 1-2 minutes.</li>
+            <li>Add mixed vegetables: Add the mixed vegetables to the pan and stir-fry for 4-5 minutes until they are tender-crisp.</li>
+            <li>Add sauces and seasonings: Stir in the soy sauce, hoisin sauce (if using), sesame oil (if using), vinegar, and sugar. Mix well and cook for 2 minutes.</li>
+            <li>Add noodles and paneer: Gently fold in the cooked noodles and paneer cubes. Mix everything thoroughly and cook for another 2-3 minutes to ensure the noodles and paneer are well-coated with the sauces.</li>
+            <li>Finish and serve: Adjust seasoning with salt and black pepper to taste. Garnish with chopped spring onions. Serve hot.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionpannernoodles')">Back</button>
+    </div>
+    
+
+    <div id="sectionmixednonvegnoodles">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>200g noodles</li>
+                <li>100g chicken, thinly sliced</li>
+                <li>100g prawns, peeled and deveined</li>
+                <li>2 tbsp oil</li>
+                <li>1 large onion, thinly sliced</li>
+                <li>2 garlic cloves, minced</li>
+                <li>1-inch piece of ginger, grated</li>
+                <li>1 cup mixed vegetables (carrots, bell peppers, peas, and beans), thinly sliced</li>
+                <li>2 tbsp soy sauce</li>
+                <li>1 tbsp oyster sauce</li>
+                <li>1 tsp sesame oil (optional)</li>
+                <li>1 tbsp vinegar</li>
+                <li>1 tsp sugar</li>
+                <li>Salt to taste</li>
+                <li>Black pepper to taste</li>
+                <li>Chopped spring onions for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>15 minutes</td>
+                    <td>25 minutes</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionmixednonvegnoodlesinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionnoodles')">Back</button> 
+    </div>
+
+    <div id="sectionmixednonvegnoodlesinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Cook the noodles: Boil water in a pot, add the noodles, and cook according to the package instructions until they are al dente. Drain and set aside.</li>
+            <li>Cook the chicken and prawns: Heat 1 tbsp oil in a large pan or wok over medium heat. Add the chicken slices and cook until they are fully cooked and lightly browned. Remove and set aside. In the same pan, add the prawns and cook until they turn pink and opaque. Remove and set aside with the chicken.</li>
+            <li>Prepare the vegetables: In the same pan, add another 1 tbsp oil. Heat over medium heat, then add the sliced onions and sauté until translucent. Add the minced garlic, grated ginger, and cook for another 1-2 minutes.</li>
+            <li>Add mixed vegetables: Add the mixed vegetables to the pan and stir-fry for 4-5 minutes until they are tender-crisp.</li>
+            <li>Add sauces and seasonings: Stir in the soy sauce, oyster sauce, sesame oil (if using), vinegar, and sugar. Mix well and cook for 2 minutes.</li>
+            <li>Add noodles, chicken, and prawns: Gently fold in the cooked noodles, chicken, and prawns. Mix everything thoroughly and cook for another 2-3 minutes to ensure everything is well-coated with the sauces.</li>
+            <li>Finish and serve: Adjust seasoning with salt and black pepper to taste. Garnish with chopped spring onions. Serve hot.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionmixednonvegnoodles')">Back</button>
+    </div>
+    
+
+    <div id="sectionchickennoodles">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>200g noodles</li>
+                <li>200g chicken breast, thinly sliced</li>
+                <li>2 tbsp oil</li>
+                <li>1 large onion, thinly sliced</li>
+                <li>2 garlic cloves, minced</li>
+                <li>1-inch piece of ginger, grated</li>
+                <li>1 cup mixed vegetables (carrots, bell peppers, peas, and beans), thinly sliced</li>
+                <li>2 tbsp soy sauce</li>
+                <li>1 tbsp hoisin sauce (optional)</li>
+                <li>1 tsp sesame oil (optional)</li>
+                <li>1 tbsp vinegar</li>
+                <li>1 tsp sugar</li>
+                <li>Salt to taste</li>
+                <li>Black pepper to taste</li>
+                <li>Chopped spring onions for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>15 minutes</td>
+                    <td>20 minutes</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionchickennoodlesinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionnoodles')">Back</button> 
+    </div>
+
+    <div id="sectionchickennoodlesinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Cook the noodles: Boil water in a pot, add the noodles, and cook according to the package instructions until they are al dente. Drain and set aside.</li>
+            <li>Cook the chicken: Heat 1 tbsp oil in a large pan or wok over medium heat. Add the chicken slices and cook until they are fully cooked and lightly browned. Remove and set aside.</li>
+            <li>Prepare the vegetables: In the same pan, add another 1 tbsp oil. Heat over medium heat, then add the sliced onions and sauté until translucent. Add the minced garlic, grated ginger, and cook for another 1-2 minutes.</li>
+            <li>Add mixed vegetables: Add the mixed vegetables to the pan and stir-fry for 4-5 minutes until they are tender-crisp.</li>
+            <li>Add sauces and seasonings: Stir in the soy sauce, hoisin sauce (if using), sesame oil (if using), vinegar, and sugar. Mix well and cook for 2 minutes.</li>
+            <li>Add noodles and chicken: Gently fold in the cooked noodles and chicken slices. Mix everything thoroughly and cook for another 2-3 minutes to ensure everything is well-coated with the sauces.</li>
+            <li>Finish and serve: Adjust seasoning with salt and black pepper to taste. Garnish with chopped spring onions. Serve hot.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionchickennoodles')">Back</button>
+    </div>
+    
+
+    <div id="sectioneggnoodles">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>200g egg noodles</li>
+                <li>2 tbsp oil</li>
+                <li>1 large onion, thinly sliced</li>
+                <li>2 garlic cloves, minced</li>
+                <li>1-inch piece of ginger, grated</li>
+                <li>1 cup mixed vegetables (carrots, bell peppers, peas, and beans), thinly sliced</li>
+                <li>2 tbsp soy sauce</li>
+                <li>1 tbsp oyster sauce</li>
+                <li>1 tsp sesame oil (optional)</li>
+                <li>1 tbsp vinegar</li>
+                <li>1 tsp sugar</li>
+                <li>Salt to taste</li>
+                <li>Black pepper to taste</li>
+                <li>Chopped spring onions for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>10 minutes</td>
+                    <td>20 minutes</td>
+                    <td>Easy</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectioneggnoodlesinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionnoodles')">Back</button>  
+    </div>
+
+    <div id="sectioneggnoodlesinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Cook the egg noodles: Boil water in a pot, add the egg noodles, and cook according to the package instructions until they are al dente. Drain and set aside.</li>
+            <li>Prepare the vegetables: Heat oil in a large pan or wok over medium heat. Add the sliced onions and sauté until translucent. Add the minced garlic, grated ginger, and cook for another 1-2 minutes.</li>
+            <li>Add mixed vegetables: Add the mixed vegetables to the pan and stir-fry for 4-5 minutes until they are tender-crisp.</li>
+            <li>Add sauces and seasonings: Stir in the soy sauce, oyster sauce, sesame oil (if using), vinegar, and sugar. Mix well and cook for 2 minutes.</li>
+            <li>Add noodles: Gently fold in the cooked egg noodles and mix everything thoroughly. Cook for another 2-3 minutes to ensure the noodles are well-coated with the sauces.</li>
+            <li>Finish and serve: Adjust seasoning with salt and black pepper to taste. Garnish with chopped spring onions. Serve hot.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectioneggnoodles')">Back</button>
+    </div>
+    
+
+    <div id="sectioncornsalad">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>2 cups corn kernels (fresh, frozen, or canned)</li>
+                <li>1 large bell pepper, diced</li>
+                <li>1 cup cherry tomatoes, halved</li>
+                <li>1/4 cup red onion, finely chopped</li>
+                <li>1/4 cup fresh cilantro, chopped</li>
+                <li>1 avocado, diced</li>
+                <li>2 tbsp olive oil</li>
+                <li>1 tbsp lemon juice</li>
+                <li>1 tsp honey</li>
+                <li>Salt to taste</li>
+                <li>Black pepper to taste</li>
+                <li>Optional: Feta cheese or crumbled cheese for topping</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>10 minutes</td>
+                    <td>None</td>
+                    <td>Easy</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectioncornsaladinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionsalad')">Back</button> 
+    </div>
+
+    <div id="sectioncornsaladinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Prepare the corn: If using fresh corn, cook the corn kernels in boiling water for about 3-4 minutes, then drain and cool. If using frozen or canned corn, simply drain and rinse.</li>
+            <li>Combine vegetables: In a large bowl, mix the corn kernels, diced bell pepper, cherry tomatoes, red onion, and chopped cilantro.</li>
+            <li>Make the dressing: In a small bowl, whisk together the olive oil, lemon juice, honey, salt, and black pepper until well combined.</li>
+            <li>Mix salad: Pour the dressing over the salad and toss everything together until evenly coated.</li>
+            <li>Add avocado: Gently fold in the diced avocado. If using, sprinkle feta cheese or crumbled cheese on top.</li>
+            <li>Finish and serve: Adjust seasoning with additional salt and pepper if needed. Serve immediately or chill in the refrigerator until ready to serve.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectioncornsalad')">Back</button>
+    </div>
+    
+
+    <div id="sectionfruitsalad">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>1 cup strawberries, hulled and sliced</li>
+                <li>1 cup blueberries</li>
+                <li>1 cup grapes, halved</li>
+                <li>1 cup pineapple chunks</li>
+                <li>1 cup mango, diced</li>
+                <li>1 kiwi, peeled and sliced</li>
+                <li>2 tbsp honey</li>
+                <li>1 tbsp fresh lime juice</li>
+                <li>Optional: Fresh mint leaves for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>15 minutes</td>
+                    <td>None</td>
+                    <td>Easy</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionfruitsaladinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionsalad')">Back</button>  
+    </div>
+
+    <div id="sectionfruitsaladinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Prepare the fruit: Wash and cut the strawberries, blueberries, grapes, pineapple, mango, and kiwi as indicated. Place all the fruit into a large mixing bowl.</li>
+            <li>Make the dressing: In a small bowl, whisk together the honey and lime juice until well combined.</li>
+            <li>Mix salad: Pour the dressing over the fruit and gently toss everything together until the fruit is evenly coated.</li>
+            <li>Finish and serve: If desired, garnish with fresh mint leaves. Serve immediately or refrigerate until ready to serve.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionfruitsalad')">Back</button>
+    </div>
+    
+
+    <div id="sectionvegetablesalad">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>1 cup cherry tomatoes, halved</li>
+                <li>1 cucumber, diced</li>
+                <li>1 bell pepper (red or yellow), diced</li>
+                <li>1/4 cup red onion, finely chopped</li>
+                <li>1/2 cup corn kernels (fresh, frozen, or canned)</li>
+                <li>1/2 cup black beans, drained and rinsed</li>
+                <li>1/4 cup fresh parsley or cilantro, chopped</li>
+                <li>2 tbsp olive oil</li>
+                <li>1 tbsp red wine vinegar or lemon juice</li>
+                <li>1 tsp honey or maple syrup</li>
+                <li>Salt to taste</li>
+                <li>Black pepper to taste</li>
+                <li>Optional: Feta cheese or crumbled cheese for topping</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>15 minutes</td>
+                    <td>None</td>
+                    <td>Easy</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionvegetablesaladinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectionsalad')">Back</button>   
+    </div>
+
+    <div id="sectionvegetablesaladinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Prepare the vegetables: Wash and cut the cherry tomatoes, cucumber, bell pepper, and red onion as indicated. If using fresh corn, cook the kernels briefly and cool. Place all the vegetables into a large mixing bowl.</li>
+            <li>Make the dressing: In a small bowl, whisk together the olive oil, red wine vinegar (or lemon juice), honey (or maple syrup), salt, and black pepper until well combined.</li>
+            <li>Mix salad: Pour the dressing over the vegetables and gently toss everything together until the vegetables are evenly coated.</li>
+            <li>Add beans and herbs: Fold in the black beans and chopped parsley (or cilantro). If desired, sprinkle feta cheese or crumbled cheese on top.</li>
+            <li>Finish and serve: Adjust seasoning with additional salt and pepper if needed. Serve immediately or chill in the refrigerator until ready to serve.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionvegetablesalad')">Back</button>
+    </div>
+    
+
+    <div id="sectionmousse">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>200g dark chocolate, chopped</li>
+                <li>3 large eggs, separated</li>
+                <li>1/4 cup granulated sugar</li>
+                <li>1 cup heavy cream</li>
+                <li>1 tsp vanilla extract</li>
+                <li>Pinch of salt</li>
+                <li>Optional: Fresh berries, mint leaves, or whipped cream for garnish</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>20 minutes</td>
+                    <td>None</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionmousseinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectiondesserts')">Back</button>
+    </div>
+
+    <div id="sectionmousseinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Melt the chocolate: In a heatproof bowl, melt the dark chocolate over a pot of simmering water (double boiler method), stirring until smooth. Remove from heat and let cool slightly.</li>
+            <li>Prepare egg yolks: In a separate bowl, whisk the egg yolks with half of the granulated sugar until pale and thick.</li>
+            <li>Combine chocolate and egg yolks: Gently fold the melted chocolate into the egg yolk mixture until well combined.</li>
+            <li>Whip the egg whites: In a clean bowl, beat the egg whites with a pinch of salt until soft peaks form. Gradually add the remaining sugar and continue beating until stiff peaks form. Gently fold the egg whites into the chocolate mixture.</li>
+            <li>Whip the cream: In another bowl, whip the heavy cream with the vanilla extract until soft peaks form. Gently fold the whipped cream into the chocolate mixture until fully incorporated.</li>
+            <li>Chill the mousse: Spoon the mousse into serving dishes and refrigerate for at least 2 hours, or until set.</li>
+            <li>Finish and serve: Garnish with fresh berries, mint leaves, or a dollop of whipped cream if desired. Serve chilled.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionmousse')">Back</button>
+    </div>
+
+        <div id="sectionbrownie">
+            <div class="menu-item-card">
+                <h2 class="healthy-food-section-heading">Ingredients</h2>
+                <ul class="healthy-food-section-description">
+                    <li>200g dark chocolate, chopped</li>
+                    <li>100g unsalted butter</li>
+                    <li>1 cup granulated sugar</li>
+                    <li>2 large eggs</li>
+                    <li>1 tsp vanilla extract</li>
+                    <li>1/2 cup all-purpose flour</li>
+                    <li>1/4 cup cocoa powder</li>
+                    <li>1/4 tsp salt</li>
+                    <li>1/2 cup chopped nuts (optional)</li>
+                    <li>Optional: Powdered sugar for dusting</li>
+                </ul>
+    
+                <table>
+                    <tr>
+                        <th>Preparation Time</th>
+                        <th>Cooking Time</th>
+                        <th>Difficulty Level</th>
+                    </tr>
+                    <tr>
+                        <td>15 minutes</td>
+                        <td>25 minutes</td>
+                        <td>Medium</td>
+                    </tr>
+                </table>
+    
+                <button class="start-cooking-btn m-5" onclick="display('sectionbrownieinstructions')">Start Cooking</button>
+            </div>
+    
+            <button class="btn-success m-3" onclick="display('sectiondesserts')">Back</button>
+        </div>
+    
+        <div id="sectionbrownieinstructions">
+            <h2 class="healthy-food-section-heading">Recipe</h2>
+            <ol class="healthy-food-section-description">
+                <li>Preheat the oven: Preheat your oven to 350°F (175°C). Grease and line a 9x9-inch (23x23 cm) baking pan with parchment paper.</li>
+                <li>Melt chocolate and butter: In a heatproof bowl, melt the dark chocolate and unsalted butter together over a pot of simmering water (double boiler method), stirring until smooth. Remove from heat and let cool slightly.</li>
+                <li>Prepare the batter: In a separate bowl, whisk together the granulated sugar, eggs, and vanilla extract until well combined. Fold in the melted chocolate mixture.</li>
+                <li>Combine dry ingredients: Sift together the flour, cocoa powder, and salt. Gently fold the dry ingredients into the wet mixture until just combined. If using, fold in the chopped nuts.</li>
+                <li>Bake the brownies: Pour the batter into the prepared baking pan and spread evenly. Bake for 20-25 minutes, or until a toothpick inserted into the center comes out with a few moist crumbs.</li>
+                <li>Cool and serve: Allow the brownies to cool completely in the pan before cutting into squares. Dust with powdered sugar if desired before serving.</li>
+            </ol>
+            <button class="btn-success m-3" onclick="display('sectionbrownie')">Back</button>
+        </div>
+    
+
+        <div id="sectionicecream">
+            <div class="menu-item-card">
+                <h2 class="healthy-food-section-heading">Ingredients</h2>
+                <ul class="healthy-food-section-description">
+                    <li>2 cups heavy cream</li>
+                    <li>1 cup whole milk</li>
+                    <li>3/4 cup granulated sugar</li>
+                    <li>1 tsp vanilla extract</li>
+                    <li>Optional: 1/2 cup chocolate chips, fruit pieces, or nuts for mix-ins</li>
+                </ul>
+    
+                <table>
+                    <tr>
+                        <th>Preparation Time</th>
+                        <th>Cooking Time</th>
+                        <th>Difficulty Level</th>
+                    </tr>
+                    <tr>
+                        <td>10 minutes</td>
+                        <td>Chilling Time</td>
+                        <td>Easy</td>
+                    </tr>
+                </table>
+    
+                <button class="start-cooking-btn m-5" onclick="display('sectionicecreaminstructions')">Start Cooking</button>
+            </div>
+    
+            <button class="btn-success m-3" onclick="display('sectiondesserts')">Back</button>
+        </div>
+    
+        <div id="sectionicecreaminstructions">
+            <h2 class="healthy-food-section-heading">Recipe</h2>
+            <ol class="healthy-food-section-description">
+                <li>Prepare the mixture: In a large mixing bowl, whisk together the heavy cream, whole milk, and granulated sugar until the sugar is fully dissolved. Stir in the vanilla extract.</li>
+                <li>Chill the mixture: Cover the bowl with plastic wrap and refrigerate for at least 2 hours, or until the mixture is very cold.</li>
+                <li>Churn the ice cream: Pour the chilled mixture into an ice cream maker and churn according to the manufacturer’s instructions, usually about 20-25 minutes.</li>
+                <li>Add mix-ins: If using, add chocolate chips, fruit pieces, or nuts during the last few minutes of churning.</li>
+                <li>Freeze the ice cream: Transfer the churned ice cream to an airtight container and freeze for an additional 2-3 hours, or until firm.</li>
+                <li>Serve: Scoop and serve the ice cream once it has reached your desired consistency. Enjoy!</li>
+            </ol>
+            <button class="btn-success m-3" onclick="display('sectionicecream')">Back</button>
+        </div>
+        
+        
+
+    <div id="sectionsizzler">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>2 boneless chicken breasts or steaks</li>
+                <li>1 tbsp olive oil</li>
+                <li>1 tbsp soy sauce</li>
+                <li>1 tbsp balsamic vinegar</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1 tsp paprika</li>
+                <li>1/2 tsp black pepper</li>
+                <li>1/2 tsp salt</li>
+                <li>1 cup broccoli florets</li>
+                <li>1 cup bell peppers, sliced</li>
+                <li>1 cup mushrooms, sliced</li>
+                <li>1 cup baby carrots</li>
+                <li>1 cup cooked rice or noodles</li>
+                <li>Optional: Sizzler sauce or your favorite sauce for drizzling</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>15 minutes</td>
+                    <td>20 minutes</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+            <button class="start-cooking-btn m-5" onclick="display('sectionsizzlerinstructions')">Start Cooking</button>
+        </div>
+
+        <button class="btn-success m-3" onclick="display('sectiondesserts')">Back</button>
+    </div>
+
+    <div id="sectionsizzlerinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Prepare the marinade: In a small bowl, mix together olive oil, soy sauce, balsamic vinegar, minced garlic, paprika, black pepper, and salt.</li>
+            <li>Marinate the meat: Place the chicken breasts or steaks in a shallow dish and pour the marinade over them. Let marinate for at least 15 minutes, or up to 2 hours in the refrigerator for more flavor.</li>
+            <li>Cook the meat: Heat a grill pan or skillet over medium-high heat. Cook the marinated chicken breasts or steaks for about 6-8 minutes per side, or until fully cooked. Remove from heat and let rest before slicing.</li>
+            <li>Prepare the vegetables: While the meat is cooking, heat a separate pan over medium heat. Add a little oil and sauté the broccoli, bell peppers, mushrooms, and baby carrots until tender-crisp, about 5-7 minutes.</li>
+            <li>Assemble the sizzler: On a hot sizzler plate or serving plate, arrange the cooked rice or noodles in the center. Top with the sautéed vegetables and sliced chicken or steak.</li>
+            <li>Finish and serve: Drizzle with sizzler sauce or your favorite sauce if desired. Serve immediately while still sizzling.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionsizzler')">Back</button>
+    </div>
+    <div id="sectionsmoothie">
+        <div class="menu-item-card">
+            <h2 class="healthy-food-section-heading">Ingredients</h2>
+            <ul class="healthy-food-section-description">
+                <li>1 cup fresh or frozen berries (strawberries, blueberries, raspberries, etc.)</li>
+                <li>1 banana, peeled and sliced</li>
+                <li>1 cup spinach or kale (optional for added nutrients)</li>
+                <li>1 cup yogurt (plain or flavored)</li>
+                <li>1/2 cup milk (any type or plant-based alternative)</li>
+                <li>1-2 tbsp honey or maple syrup (to taste)</li>
+                <li>1/2 tsp vanilla extract (optional)</li>
+                <li>Ice cubes (optional, for a thicker smoothie)</li>
+            </ul>
+    
+            <table>
+                <tr>
+                    <th>Preparation Time</th>
+                    <th>Cooking Time</th>
+                    <th>Difficulty Level</th>
+                </tr>
+                <tr>
+                    <td>10 minutes</td>
+                    <td>None</td>
+                    <td>Easy</td>
+                </tr>
+            </table>
+    
+            <button class="start-cooking-btn m-5" onclick="display('sectionsmoothieinstructions')">Start Cooking</button>
+        </div>
+    
+        <button class="btn-success m-3" onclick="display('sectiondesserts')">Back</button>
+    </div>
+    
+    <div id="sectionsmoothieinstructions">
+        <h2 class="healthy-food-section-heading">Recipe</h2>
+        <ol class="healthy-food-section-description">
+            <li>Prepare the ingredients: Wash the berries and spinach or kale (if using). Peel and slice the banana.</li>
+            <li>Blend the smoothie: In a blender, combine the berries, banana, spinach or kale (if using), yogurt, and milk. Add honey or maple syrup and vanilla extract (if using). Blend until smooth.</li>
+            <li>Adjust consistency: If the smoothie is too thick, add more milk or water until you reach your desired consistency. For a thicker smoothie, add ice cubes and blend again.</li>
+            <li>Finish and serve: Taste and adjust sweetness if needed. Pour into glasses and serve immediately.</li>
+        </ol>
+        <button class="btn-success m-3" onclick="display('sectionsmoothie')">Back</button>
+    </div>
+    
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
